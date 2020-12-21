@@ -27,3 +27,6 @@
 
 /* Class = "NSMenuItem"; title = " •  Notifications"; ObjectID = "xcw-JU-8Ai"; */
 "xcw-JU-8Ai.title" = " •  Notifications";
+
+/* Class = "NSMenuItem"; title = "▶︎  Play/Pause"; ObjectID = "7kO-3N-pec"; */
+"7kO-3N-pec.title" = "▶︎  播放/暂停";

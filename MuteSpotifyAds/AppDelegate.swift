@@ -24,6 +24,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     @IBOutlet weak var startSpotifyCheckbox: NSMenuItem!
     @IBOutlet weak var notificationsCheckbox: NSMenuItem!
     @IBOutlet weak var songLogCheckbox: NSMenuItem!
+    @IBOutlet weak var playPause: NSMenuItem!
+    
     
     var notificationsEnabled = false
     
@@ -53,6 +55,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     
     @IBAction func openLicenseWebsite(_ sender: Any) {
         openWebsite(url: "https://www.gnu.org/licenses/gpl-3.0.txt")
+    }
+    
+    @IBAction func playPause(_ sender: Any) {
+        spotifyManager?.toggleSpotifyPlayPause()
     }
     
     @IBAction func toggleEndlessPrivateSession(_ sender: NSMenuItem) {

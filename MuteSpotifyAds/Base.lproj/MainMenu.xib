@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -16,6 +16,7 @@
             <connections>
                 <outlet property="endlessPrivateSessionCheckbox" destination="o3E-lf-Jhd" id="yKp-C1-PHU"/>
                 <outlet property="notificationsCheckbox" destination="xcw-JU-8Ai" id="VMH-h2-Gmq"/>
+                <outlet property="playPause" destination="7kO-3N-pec" id="Oz4-Cc-Eiq"/>
                 <outlet property="restartToSkipAdsCheckbox" destination="7pt-Ak-HDD" id="DD7-3v-iN8"/>
                 <outlet property="songLogCheckbox" destination="GPc-bM-QPt" id="Cvp-2p-C95"/>
                 <outlet property="startSpotifyCheckbox" destination="Zxc-BN-6PQ" id="aSJ-67-53J"/>
@@ -26,13 +27,20 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="KUr-cl-g3N">
             <items>
-                <menuItem title="☂︎ MuteSpotifyAds" id="Qme-N6-cSD">
+                <menuItem title="☂︎  MuteSpotifyAds" id="Qme-N6-cSD">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="openProjectWebsite:" target="Voe-Tx-rLC" id="oYX-Ka-nYd"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="j8S-qT-8fQ"/>
+                <menuItem title="▶︎  Play/Pause" id="7kO-3N-pec">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="playPause:" target="Voe-Tx-rLC" id="SnM-Rq-q3D"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="daz-eZ-QhM"/>
                 <menuItem title="∞  Private session" id="o3E-lf-Jhd">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -96,7 +104,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="190" y="133"/>
+            <point key="canvasLocation" x="189.5" y="133"/>
         </menu>
     </objects>
 </document>
