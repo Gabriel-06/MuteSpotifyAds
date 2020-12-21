@@ -15,6 +15,7 @@ This application is not in any way affiliated with Spotify.
 ## Features
 
 * Mute ads
+* Play or pause Spotify from the menu
 * Endless private session
 * Song log file
 * Restart spotify to skip ads
